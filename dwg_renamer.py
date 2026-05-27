@@ -130,7 +130,8 @@ class App(tk.Tk):
 
         self.rename_btn = tk.Button(btn_frame, text="✅  Rename Files",
                                     font=("Segoe UI", 10, "bold"),
-                                    bg=ACCENT, fg="white", relief="flat", bd=0,
+                                    bg=ACCENT, fg="white", disabledforeground="white",
+                                    relief="flat", bd=0,
                                     padx=14, pady=6, cursor="hand2",
                                     state="disabled", command=self._rename)
         self.rename_btn.pack(side="left")
